@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="style.response.css">
+</head>
+<body>
+         <div>
+           <form action="/action.php">
+
+            <h4>Feedback Form</h4>
+            <label for="username">Username:</label>
+            <input type="text"id="username" name="username">
+    
+            <label for="email.id">Email id:</label>
+            <input type="email" id="emailid" name="email.id">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+             <div class="rate">
+            <h5>⭐ Rate My Project:</h5>
+            </div>
+            <div class="drop">
+            <select name="Rate" id="Rate">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            </div>
+            <div class="exp">
+            <h5>👉 How was your experience?</h5>
+            </div>
+            <div class="radio-group">
+            <label for="excellent"></label>
+            <input type="radio" value="excelent" name="experience" id="excellent">Excellent<br>
+            <label for="good"></label>
+            <input type="radio" value="good" name="experience" id="good">Good<br>
+            <label for="average"></label>
+            <input type="radio" value="average" name="experience" id="average">Average<br>
+            <label for="poor"></label>
+            <input type="radio" value="poor" name="experience" id="poor">Poor
+        </div>
+        <div class="most">
+            <h5>👉 What did you like the most?</h5>
+            </div>
+            <div class="like">
+            <label for="design"></label>
+            <input type="checkbox" name="likes" value="design">Design<br>
+            <label for="information"></label>
+            <input type="checkbox" name="likes" value="information">Information<br>
+            <label for="navigation"></label>
+            <input type="checkbox" name="likes" value="navigation">Navigation<br>
+            <label for="other"></label>
+            <input type="checkbox" name="likes" value="other">Other
+            </div>
+            <div class="feedback">
+            <textarea name="feedback" id="feedback" placeholder="please give your feedback here" rows="5" cols="50">Feedback</textarea>
+            </div>
+            <button>Submit</button>
+           </form>
+           </div>
+    
+</body>
+</html>
