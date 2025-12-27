@@ -1,0 +1,165 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #355C7D;
+  font-family: Arial, sans-serif;
+}
+header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(3, 3, 50);
+  padding: 25px 30px;
+}
+
+.heading{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.heading img{
+  width: 45px;
+  height: 45px;
+}
+
+.heading h1{
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px 10px;
+  font-size: 15px;
+}
+
+nav a:hover{
+  background-color: white;
+  color: black;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+main{
+  min-height: 100vh;
+  padding: 20px;
+}
+h3{
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 36px;
+  padding: 10px;
+}
+
+main p{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  max-width: 800px;
+  margin: 10px auto 20px;
+}
+form{
+  background-color: white;
+  max-width: 500px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  height: auto;
+}
+h4{
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+input,select,textarea{
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+textarea{
+  resize: vertical;
+}
+.radio-group,.like{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.rate,
+.exp,
+.most{
+  margin-top: 20px;
+}
+
+button{
+  display: block;
+  margin: 20px auto;
+  background-color: #355C7D;
+  color: white;
+  font-size: 18px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: #6D87A8;
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(3, 3, 50);
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px){
+  header{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heading h1{
+    font-size: 20px;
+  }
+
+  h3{
+    font-size: 26px;
+  }
+
+  main p{
+    font-size: 15px;
+  }
+
+  h4{
+    font-size: 22px;
+  }
+
+  button{
+    font-size: 16px;
+  }
+}
